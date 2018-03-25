@@ -14,10 +14,17 @@
     "build": "ember build",
     "lint:js": "eslint ./*.js app config lib server tests",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "cordovabuild": "node cordova-manual/build/server.js",
+    "postcordovabuild": "node cordova-manual/build/shell.js",
+    "cordovaserve": "node cordova-manual/build/shell.js",
+    "precordovaserve": "node cordova-manual/build/dev-server.js",
+    "postcordovaserve": "ember s"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
+    "corber": "1.2.4",
+    "cordova": "^8.0.0",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~3.0.1",
     "ember-cli-app-version": "^3.0.0",
